@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <manifest>
-	<remote name="local" fetch="git://localhost/" />
-	<default remote="local" revision="master"/>
+	<remote name="origin" fetch="git@gitlab.com:Keccak256-evg" />
+	<default remote="origin" revision="master"/>
     
-	<project path="evgrnpublic" name="git@gitlab.com:Keccak256-evg/fe-platform/rnsplitcode/rnsdkpro/evgrnpublic.git" revision="kikidev_0816_zjl"/>
+	<project path="evgrnpublic" name="fe-platform/rnsplitcode/rnsdkpro/evgrnpublic.git" revision="kikidev_0816_zjl"/>
 
-    <project path="src" name="git@gitlab.com:Keccak256-evg/fe-platform/rnsplitcode/business/allsimple.git" revision="kikidev_0816_zjl"/>
+    <project path="src" name="fe-platform/rnsplitcode/business/allsimple.git" revision="kikidev_0816_zjl"/>
 
-	<project path="ios" name="git@gitlab.com:Keccak256-evg/fe-platform/rnsplitcode/rnsdkpro/iossdk.git" revision="master"/>
+	<project path="ios" name="fe-platform/rnsplitcode/rnsdkpro/iossdk.git" revision="master"/>
 
-	<project path="android" name="git@gitlab.com:Keccak256-evg/fe-platform/rnsplitcode/rnsdkpro/androidsdkk.git" revision="kikidev_react_commom_lib"/>
+	<project path="android" name="fe-platform/rnsplitcode/rnsdkpro/androidsdkk.git" revision="kikidev_react_commom_lib"/>
 
-	<project path="." name="git@gitlab.com:Keccak256-evg/fe-platform/rnsplitcode/rnsdkpro/evgnativemodule.git" revision="kikifeature_0809_zjl"/>
+	<project path="." name="fe-platform/rnsplitcode/rnsdkpro/evgnativemodule.git" revision="kikifeature_0809_zjl"/>
 
-	<project path="rnmain" name="git@gitlab.com:Keccak256-evg/fe-platform/rnsplitcode/business/mainapp.git" revision="kikidev_0816_zjl"/>
+	<project path="rnmain" name="fe-platform/rnsplitcode/business/mainapp.git" revision="kikidev_0816_zjl"/>
 
-    <project path="featureProbe" name="git@gitlab.com:Keccak256-evg/fe-platform/rnsplitcode/business/featureprobe.git" revision="master"/>
+    <project path="featureProbe" name="fe-platform/rnsplitcode/business/featureprobe.git" revision="master"/>
 
 
 </manifest>
