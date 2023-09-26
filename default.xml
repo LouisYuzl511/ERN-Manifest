@@ -1,22 +1,46 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <manifest>
-	<remote name="origin" fetch="git@gitlab.com:Keccak256-evg" />
-	<default remote="origin" revision="master"/>
-    
-	<project path="evgrnpublic" name="fe-platform/rnsplitcode/rnsdkpro/evgrnpublic.git" revision="kikidev_0816_zjl"/>
+	<ernProject remote="https://gitlab.com/Keccak256-evg/fe-platform/" defaultVision="master">
+		<project path="evgrnpublic" repository="rnsdkpro/evgrnpublic.git" revision="kiki"/>
+		<project path="evgnativemodule" repository="rnsdkpro/evgnativemodule.git"/>
+		<project path="rnmain" repository="business/mainapp.git"/>
+		<project path="." repository="rnsdkpro/jsmaintemplete.git" />
+	</ernProject>
 
-    <project path="src" name="fe-platform/rnsplitcode/business/allsimple.git" revision="kikidev_0816_zjl"/>
+	<android>
+		<project path="android" repository="https://gitlab.com/Keccak256-evg/fe-platform/rnsdkpro/androidsdkk.git" revision="master"/>
+	</android>
 
-	<project path="ios" name="fe-platform/rnsplitcode/rnsdkpro/iossdk.git" revision="master"/>
+	<ios>
+		<project path="evgrnpublic" repository="https://gitlab.com/Keccak256-evg/fe-platform/rnsdkpro/iossdk.git" revision="master"/>
+	</ios>
 
-	<project path="android" name="fe-platform/rnsplitcode/rnsdkpro/androidsdkk.git" revision="kikidev_react_commom_lib"/>
+	<bussiness remote="https://gitlab.com/Keccak256-evg/kiki/">
+		<project path="TabSocial" repository="business/allsimple.git" revision="master"/> 
+		<project path="TabWallet" repository="business/allsimple.git" revision="master"/> 
+	</bussiness>
 
-	<project path="." name="fe-platform/rnsplitcode/rnsdkpro/evgnativemodule.git" revision="kikifeature_0809_zjl"/>
+	<featureProbe>
+		<env appname="EvgRnDeme" authorization = "api-040b5337513543d3020f03dea9b9d5a0ef9d8713"/>
+		<config server = "server-944896f7bfc462a3fb7264d63daa85a874b72e0d"/>
+		<enum name= "ErnFeatureKikiEnv">
+			<dev>client-426fad1684af2fae62cd378c455a6b4e698bd4da</dev>
+			<prod>client-426fad1684af2fae62cd378c455a6b4e698bd4da</prod>
+		</enum>
+	</featureProbe>
+	<sentry dsn="https://16690f389210c27813dde31cff460040@o4505831993311232.ingest.sentry.io/4505831993376768">
 
-	<project path="rnmain" name="fe-platform/rnsplitcode/business/mainapp.git" revision="kikidev_0816_zjl"/>
 
-    <project path="featureProbe" name="fe-platform/rnsplitcode/business/featureprobe.git" revision="master"/>
+	</sentry>
 
+	<!-- <config>
+		<sentry dsn="https://16690f389210c27813dde31cff460040@o4505831993311232.ingest.sentry.io/4505831993376768"/>
+		<featureProbe server = "server-944896f7bfc462a3fb7264d63daa85a874b72e0d" />
+	</config>
 
+	<env>
+		<featureProbe appname="EvgRnDeme" authorization = "api-040b5337513543d3020f03dea9b9d5a0ef9d8713"/>
+		<sentry project="react-native" org="evg-8f93bbb48" />
+	</env> -->
 </manifest>
